@@ -1,0 +1,15 @@
+D:\Academic\dotnet\dotnet\lesson01 - top level statement\bin\Debug\net6.0\lesson01 - top level statement.exe
+D:\Academic\dotnet\dotnet\lesson01 - top level statement\bin\Debug\net6.0\lesson01 - top level statement.deps.json
+D:\Academic\dotnet\dotnet\lesson01 - top level statement\bin\Debug\net6.0\lesson01 - top level statement.runtimeconfig.json
+D:\Academic\dotnet\dotnet\lesson01 - top level statement\bin\Debug\net6.0\lesson01 - top level statement.dll
+D:\Academic\dotnet\dotnet\lesson01 - top level statement\bin\Debug\net6.0\lesson01 - top level statement.pdb
+D:\Academic\dotnet\dotnet\lesson01 - top level statement\obj\Debug\net6.0\lesson01 - top level statement.csproj.AssemblyReference.cache
+D:\Academic\dotnet\dotnet\lesson01 - top level statement\obj\Debug\net6.0\lesson01 - top level statement.GeneratedMSBuildEditorConfig.editorconfig
+D:\Academic\dotnet\dotnet\lesson01 - top level statement\obj\Debug\net6.0\lesson01 - top level statement.AssemblyInfoInputs.cache
+D:\Academic\dotnet\dotnet\lesson01 - top level statement\obj\Debug\net6.0\lesson01 - top level statement.AssemblyInfo.cs
+D:\Academic\dotnet\dotnet\lesson01 - top level statement\obj\Debug\net6.0\lesson01 - top level statement.csproj.CoreCompileInputs.cache
+D:\Academic\dotnet\dotnet\lesson01 - top level statement\obj\Debug\net6.0\lesson01 - top level statement.dll
+D:\Academic\dotnet\dotnet\lesson01 - top level statement\obj\Debug\net6.0\refint\lesson01 - top level statement.dll
+D:\Academic\dotnet\dotnet\lesson01 - top level statement\obj\Debug\net6.0\lesson01 - top level statement.pdb
+D:\Academic\dotnet\dotnet\lesson01 - top level statement\obj\Debug\net6.0\lesson01 - top level statement.genruntimeconfig.cache
+D:\Academic\dotnet\dotnet\lesson01 - top level statement\obj\Debug\net6.0\ref\lesson01 - top level statement.dll
