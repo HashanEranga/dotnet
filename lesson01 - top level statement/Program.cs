@@ -1,4 +1,6 @@
-﻿// top level statement model 
+﻿using System.Threading.Tasks;
+
+// top level statement model 
 Console.WriteLine("Hello, World!");
 
 // reading args
@@ -13,6 +15,25 @@ foreach (string arg in args)
 {
     Console.WriteLine(arg);
 }
+
+// sample loading screen 
+// using System.Threading.Tasks; will smooth the exp 
+for (int i = 0; i < 20; i++)
+{
+    Console.Write("| -");
+    await Task.Delay(50);
+    Console.Write("\b\b\b");
+    Console.Write("/ \\");
+    await Task.Delay(50);
+    Console.Write("\b\b\b");
+    Console.Write("- |");
+    await Task.Delay(50);
+    Console.Write("\b\b\b");
+    Console.Write("\\ /");
+    await Task.Delay(50);
+    Console.Write("\b\b\b");
+}
+Console.WriteLine();
 
 string[] answers =
 {
@@ -31,8 +52,6 @@ string[] answers =
 // How to display a random answer
 var index = new Random().Next(answers.Length);
 Console.WriteLine(answers[index]);
-
-
 
 
 
