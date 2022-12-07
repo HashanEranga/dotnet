@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/hashaneranga/Documents/dotnet/04-WebApp-creation-using-razor-pages/WebAppBookKeeping
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/hashaneranga/Documents/dotnet/04-WebApp-creation-using-razor-pages/WebAppBookKeeping/Pages/Book.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQm9vay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/hashaneranga/Documents/dotnet/04-WebApp-creation-using-razor-pages/WebAppBookKeeping/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
