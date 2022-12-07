@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "08BsW89s9PD+htiNn9T2CRtg7D0ftIQK4KDxO90JGdY=",
+  "Source": "03-WebAPI-dotnet-core-controllers",
+  "BasePath": "_content/03-WebAPI-dotnet-core-controllers",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
