@@ -18,7 +18,7 @@ namespace _03_WebAPI_dotnet_core_controllers.Services
         }
 
         public static List<Book> GetAllBooks() => Books;
-        public static Book GetBook(int Id) => Books.FirstOrDefault(book => book.Id == Id);
+        public static Book? GetBook(int Id) => Books.FirstOrDefault(book => book.Id == Id);
         public static void AddBook(Book book)
         {
             book.Id = NextId++;
@@ -26,7 +26,7 @@ namespace _03_WebAPI_dotnet_core_controllers.Services
         }
         public static void DeleteBook(int Id)
         {
-            Book book = GetBook(Id);
+            var book = GetBook(Id);
             if (book is null) return;
             Books.Remove(book);
         }
