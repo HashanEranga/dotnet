@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "2w0eaf7Ai/jS54csRrdG1Z0loe4srN2PmIwLZ1JFQ4jhJ5b9BuS1Qi8fR1xd2EtyLPzMWixZM8wqUelkqI1wRw==",
+  "success": true,
+  "projectFilePath": "/Users/hashaneranga/Documents/dotnet/04-WebApp-creation-using-razor-pages/WebAppBookKeeping/WebAppBookKeeping.csproj",
+  "expectedPackageFiles": [
+    "/Users/hashaneranga/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.11/microsoft.aspnetcore.app.ref.6.0.11.nupkg.sha512",
+    "/Users/hashaneranga/.nuget/packages/microsoft.netcore.app.host.osx-x64/6.0.11/microsoft.netcore.app.host.osx-x64.6.0.11.nupkg.sha512",
+    "/Users/hashaneranga/.nuget/packages/microsoft.netcore.app.ref/6.0.11/microsoft.netcore.app.ref.6.0.11.nupkg.sha512"
+  ],
+  "logs": []
+}
