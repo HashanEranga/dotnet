@@ -17,20 +17,20 @@ namespace _03_WebAPI_dotnet_core_controllers.Services
             };
         }
 
-        public static List<Book> GetAll() => Books;
-        public static Book Get(int Id) => Books.FirstOrDefault(book => book.Id == Id);
-        public static void Add(Book book)
+        public static List<Book> GetAllBooks() => Books;
+        public static Book GetBook(int Id) => Books.FirstOrDefault(book => book.Id == Id);
+        public static void AddBook(Book book)
         {
             book.Id = NextId++;
             Books.Add(book);
         }
-        public static void Delete(int Id)
+        public static void DeleteBook(int Id)
         {
-            Book book = Get(Id);
+            Book book = GetBook(Id);
             if (book is null) return;
             Books.Remove(book);
         }
-        public static void Update(Book book)
+        public static void UpdateBook(Book book)
         {
             int index = Books.FindIndex(listBook => listBook.Id == book.Id);
             if (index < 0) return;

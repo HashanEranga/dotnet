@@ -9,28 +9,47 @@ namespace _03_WebAPI_dotnet_core_controllers.Controllers
     [Route("[controller]")]
     public class BookController : ControllerBase
     {
-        public BookController()
-        {
-        }
-
         // Get All Books
         [HttpGet]
-        public ActionResult<List<Book>> GetAll() => BookService.GetAll();
+        public ActionResult<List<Book>> GetAllBooks() => BookService.GetAllBooks();
 
         // Get by Id Action
         [HttpGet("{id}")]
-        public ActionResult<Book> GetBook(int Id)
+        public ActionResult<Book> GetBook(int id)
         {
-            var book = BookService.Get(Id);
+            var book = BookService.GetBook(id);
             if (book is null) return NotFound();
             return book;
         }
 
         // POST Action
+        [HttpPost]
+        public IActionResult CreateBook(Book book)
+        {
+            BookService.AddBook(book);
+            return CreatedAtAction(nameof(CreateBook), new { Id = book.Id }, book);
+        }
 
         // PUT Action
+        [HttpPut("{id}")]
+        public IActionResult EditBook(int id, Book book)
+        {
+            if (id != book.Id) return BadRequest();
+            var currentBook = BookService.GetBook(id);
+            if (currentBook is null) return NotFound();
+            BookService.UpdateBook(book);
+            return NoContent();
+        }
 
         // Delete Action
+        [HttpDelete("{id}")]
+        public IActionResult DeleteBook(int id)
+        {
+            var book = BookService.GetBook(id);
+            if (book is null) return NotFound();
+            BookService.DeleteBook(book.Id);
+            return NoContent();
+        }
     }
 }
 
