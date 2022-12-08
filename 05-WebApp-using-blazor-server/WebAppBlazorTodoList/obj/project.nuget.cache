@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "yyWNrlmKN4DhLdpBah4zrz4Lhc6Ao+zqG80N+5cUvt8zsYBiz/nK/7Z1gMmo/SV6O880FO9nmRvdQjlWZ8OcjA==",
+  "success": true,
+  "projectFilePath": "/Users/hashaneranga/Documents/dotnet/05-WebApp-using-blazor-server/WebAppBlazorTodoList/WebAppBlazorTodoList.csproj",
+  "expectedPackageFiles": [
+    "/Users/hashaneranga/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.11/microsoft.aspnetcore.app.ref.6.0.11.nupkg.sha512",
+    "/Users/hashaneranga/.nuget/packages/microsoft.netcore.app.host.osx-x64/6.0.11/microsoft.netcore.app.host.osx-x64.6.0.11.nupkg.sha512",
+    "/Users/hashaneranga/.nuget/packages/microsoft.netcore.app.ref/6.0.11/microsoft.netcore.app.ref.6.0.11.nupkg.sha512"
+  ],
+  "logs": []
+}
