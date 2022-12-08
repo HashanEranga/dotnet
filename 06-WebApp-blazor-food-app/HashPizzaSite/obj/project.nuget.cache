@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "lsi3/UKNTSYMJIA5u+g/i1gH21Dgilc7F3cHxgBbkF5A82kXb/sJ6JDvWCy9s1d0vT4DRRvNQUh1Wv/uUrQ1zA==",
+  "success": true,
+  "projectFilePath": "/Users/hashaneranga/Documents/dotnet/06-WebApp-blazor-food-app/HashPizzaSite/HashPizzaSite.csproj",
+  "expectedPackageFiles": [
+    "/Users/hashaneranga/.nuget/packages/microsoft.netcore.app.ref/6.0.11/microsoft.netcore.app.ref.6.0.11.nupkg.sha512",
+    "/Users/hashaneranga/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.11/microsoft.aspnetcore.app.ref.6.0.11.nupkg.sha512",
+    "/Users/hashaneranga/.nuget/packages/microsoft.netcore.app.host.osx-x64/6.0.11/microsoft.netcore.app.host.osx-x64.6.0.11.nupkg.sha512"
+  ],
+  "logs": []
+}
