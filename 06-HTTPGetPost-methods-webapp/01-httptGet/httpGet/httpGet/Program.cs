@@ -5,14 +5,11 @@ app.MapGet("/", () => "Hello World!");
 
 app.Run(async (HttpContext context) =>
 {
-    // set the content type to text/html
     context.Response.Headers["Content-type"] = "text/html";
-
-    // check for custom header metadata
-    if (context.Request.Headers.ContainsKey("Authorization-key"))
+    if (context.Request.Headers.ContainsKey("User-Agent"))
     {
-        string authKey = context.Request.Headers["Autherization-Key"];
-        await context.Response.WriteAsync($"<p>{authKey}</p>");
+        string userAgent = context.Request.Headers["User-Agent"];
+        await context.Response.WriteAsync($"<p>{userAgent}</p>");
     }
 });
 
