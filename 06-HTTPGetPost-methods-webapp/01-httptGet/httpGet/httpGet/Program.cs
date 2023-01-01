@@ -1,5 +1,3 @@
-using System.Text;
-
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
@@ -10,11 +8,11 @@ app.Run(async (HttpContext context) =>
     // set the content type to text/html
     context.Response.Headers["Content-type"] = "text/html";
 
-    // check for default header metadata
-    if (context.Request.Headers.ContainsKey("User-Agent"))
+    // check for custom header metadata
+    if (context.Request.Headers.ContainsKey("Authorization-key"))
     {
-        string userAgent = context.Request.Headers["User-Agent"];
-        await context.Response.WriteAsync($"<p>{userAgent}</p>");
+        string authKey = context.Request.Headers["Autherization-Key"];
+        await context.Response.WriteAsync($"<p>{authKey}</p>");
     }
 });
 
