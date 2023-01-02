@@ -37,10 +37,13 @@ app.MapGet("/", () => "Hello World!");
 // the above example uses middleware chaining
 
 // creating middleware classes
-app.UseMiddleware<UseMyCustomMiddleware>();
+// app.UseMiddleware<UseMyCustomMiddleware>();
 
-app.Run(async (HttpContext context)=>{
-    await context.Response.WriteAsync("This is the Program class middleware\n");
-});
+// app.Run(async (HttpContext context)=>{
+//     await context.Response.WriteAsync("This is the Program class middleware\n");
+// });
+
+// creating middleware extension classes
+app.AppyMyCustomMiddlewareExtension();
 
 app.Run();

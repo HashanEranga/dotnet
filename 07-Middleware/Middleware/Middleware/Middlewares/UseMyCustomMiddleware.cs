@@ -10,4 +10,10 @@ namespace Middleware.Middlewares {
             // after logic
         }
     }
+
+    public static class UseMyCustomMiddlewareExtension{
+        public static AppyMyCustomMiddlewareExtension(this IApplicationBuilder app){
+            return app.UseMiddleware<UseMyCustomMiddleware>();
+        }
+    }
 }
