@@ -44,6 +44,6 @@ app.MapGet("/", () => "Hello World!");
 // });
 
 // creating middleware extension classes
-app.AppyMyCustomMiddlewareExtension();
+app.UseMyCustomMiddlewareExtension();
 
 app.Run();

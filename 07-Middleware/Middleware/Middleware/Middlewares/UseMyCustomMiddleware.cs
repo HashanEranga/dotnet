@@ -12,7 +12,7 @@ namespace Middleware.Middlewares {
     }
 
     public static class UseMyCustomMiddlewareExtension{
-        public static AppyMyCustomMiddlewareExtension(this IApplicationBuilder app){
+        public static IApplicationBuilder AppyMyCustomMiddlewareExtension(this IApplicationBuilder app){
             return app.UseMiddleware<UseMyCustomMiddleware>();
         }
     }
