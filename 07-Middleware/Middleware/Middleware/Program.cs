@@ -44,6 +44,18 @@ app.MapGet("/", () => "Hello World!");
 // });
 
 // creating middleware extension classes
-app.UseMyCustomMiddlewareExtension();
+//app.UseMyCustomMiddlewareExtension();
+app.Use(async (HttpContext context, RequestDelegate next) =>
+{
+    await context.Response.WriteAsync("This is lambda middleware\n");
+    await next(context);
+});
+
+app.UseMiddlewareClassConventional();
+
+app.Run(async (HttpContext context) =>
+{
+    await context.Response.WriteAsync("This is terminating middleware");    
+});
 
 app.Run();
