@@ -34,16 +34,27 @@ app.UseRouting();
 // });
 
 // accessing parameters
-app.UseEndpoints( endpoints => {
-    endpoints.MapGet("/files/{filename}.{extension}", async context => {
-        string? fileName = context.Request.RouteValues["filename"].ToString();
-        string? extension = context.Request.RouteValues["extension"].ToString();
-        await context.Response.WriteAsync($"In files accessed {fileName}.{extension}");
+//app.UseEndpoints( endpoints => {
+//    endpoints.MapGet("/files/{filename}.{extension}", async context => {
+//        string? fileName = context.Request.RouteValues["filename"].ToString();
+//        string? extension = context.Request.RouteValues["extension"].ToString();
+//        await context.Response.WriteAsync($"In files accessed {fileName}.{extension}");
+//    });
+//});
+
+// adding default parameters
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapGet("/employee/profile/{EmpName=ishini}", async context =>
+    {
+        string? empName = Convert.ToString(context.Request.RouteValues["EmpName"]);
+        await context.Response.WriteAsync($"In employee profile - {empName}");
     });
 });
 
 // configure for other paths were added
-app.Run(async context => {
+app.Run(async context =>
+{
     await context.Response.WriteAsync($"Request path is {context.Request.Path}");
 });
 
