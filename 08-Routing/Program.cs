@@ -50,6 +50,19 @@ app.UseEndpoints(endpoints =>
         string? empName = Convert.ToString(context.Request.RouteValues["EmpName"]);
         await context.Response.WriteAsync($"In employee profile - {empName}");
     });
+
+    endpoints.MapGet("/products/{id=1}", async context =>
+    {
+        string? prodId = Convert.ToString(context.Request.RouteValues["id"]);
+        await context.Response.WriteAsync($"Product id is {prodId}");
+    });
+
+    // optional parameters
+    endpoints.MapGet("/product/{id?}", async context =>
+    {
+        string? prodId = Convert.ToString(context.Request.RouteValues["id"]);
+        await context.Response.WriteAsync($"Product id is {prodId}");
+    });
 });
 
 // configure for other paths were added
