@@ -65,6 +65,47 @@ app.UseEndpoints(endpoints =>
     });
 });
 
+// Route Constraints
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapGet("store/newspaper/{id:int}", async context =>
+    {
+        int paperId = Convert.ToInt32(context.Request.RouteValues["id"]);
+        await context.Response.WriteAsync($"Paper id is {paperId}");
+    });
+
+    endpoints.MapGet("login/{isAuthorized:bool}", async context =>
+    {
+        Boolean isAuthorized = Convert.ToBoolean(context.Request.RouteValues["isAuthorized"]);
+        if (isAuthorized) await context.Response.WriteAsync("User Authorized");
+        else await context.Response.WriteAsync("User not Authorized");
+    });
+
+    endpoints.MapGet("daily-digest-report/{reportdate:datetime}", async context =>
+    {
+        DateTime reportDate = Convert.ToDateTime(context.Request.RouteValues["reportdate"]);
+        await context.Response.WriteAsync($"Report date for the digestion : {reportDate.ToShortDateString()}");
+    });
+
+    endpoints.MapGet("cities/{cityid:guid}", async context =>
+    {
+        Guid cityId = Guid.Parse(Convert.ToString(context.Request.RouteValues["cityid"])!);
+        await context.Response.WriteAsync($"city id is : {cityId}");
+    });
+
+    endpoints.MapGet("cityid", async context =>
+    {
+        Guid cityIdGuid = new();
+        await context.Response.WriteAsync($"{cityIdGuid}");
+    });
+
+    endpoints.MapGet("student/profile/{firstname:minlength(4)}", async context =>
+    {
+        string? stuName = Convert.ToString(context.Request.RouteValues["firstname"]);
+        await context.Response.WriteAsync($"student's first name is : {stuName}");
+    });
+});
+
 // configure for other paths were added
 app.Run(async context =>
 {
